@@ -21,7 +21,7 @@ def Health_Manager(user_name):
     record_type = int(input("What type of data you want to record ?\n[0] - Diet\n[1] - Exercise\nChoice: "))
     diet_exercise = (lambda x:'Diet' if not x else "Exercise")(record_type)
 
-    data = (lambda: input("What have you eaten since morning\n: ") if not record_type else input("Enter your workout here \n: "))
+    data = (lambda: input("What have you eaten since morning?\n: ") if not record_type else input("Enter your workout here \n: "))
     user_data_items = []
     print("\nType 'exit' to write changes to the file.\nPress Enter to write next item name\n")
 
